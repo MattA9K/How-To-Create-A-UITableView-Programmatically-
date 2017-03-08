@@ -8,18 +8,45 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var tableViewMain : UITableView!
+    let tvitems: [String] = ["We msdjngtkj sdrgkjhskdjh", "Heart", "Swift"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
+    func initializeTableView() {
+        let rect = CGRect(x: 100, y: 100, width: 300, height: 400)
+        self.tableViewMain = UITableView(frame: rect)
+        self.tableViewMain.register(UITableViewCell.self, forCellReuseIdentifier: "cellThing");
+        self.tableViewMain.delegate = self
+        self.tableViewMain.dataSource = self
+        self.view.addSubview(tableViewMain)
+        self.tableViewMain.reloadData()
+    }
+    
+    // UITableView Delegate & DataSource Methods:
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell : UITableViewCell = self.tableViewMain.dequeueReusableCell(withIdentifier: "cellThing") as! UITableViewCell
+        cell.textLabel!.text = tvitems[indexPath.row];
+        return cell
+    }
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1;
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tvitems.count;
+    }
 }
-
