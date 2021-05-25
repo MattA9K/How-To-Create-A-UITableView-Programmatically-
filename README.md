@@ -13,7 +13,8 @@ Use the `ViewController.swift` file as a scaffold if you need a quick reference 
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    var tableViewMain : UITableView!
+    let tvitems: [String] = ["We msdjngtkj sdrgkjhskdjh", "Heart", "Swift"]
 ```
 
 
