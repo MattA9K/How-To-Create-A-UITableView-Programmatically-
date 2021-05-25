@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8DA75B1265D3E290022B87F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C8DA75B0265D3E280022B87F /* README.md */; };
+		C8DA75B3265D400F0022B87F /* demo.png in Resources */ = {isa = PBXBuildFile; fileRef = C8DA75B2265D400F0022B87F /* demo.png */; };
 		C8DEFAAF1E7050BB00BEE49D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DEFAAE1E7050BB00BEE49D /* AppDelegate.swift */; };
 		C8DEFAB11E7050BB00BEE49D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DEFAB01E7050BB00BEE49D /* ViewController.swift */; };
 		C8DEFAB41E7050BB00BEE49D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8DEFAB21E7050BB00BEE49D /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C8DA75B0265D3E280022B87F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C8DA75B2265D400F0022B87F /* demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo.png; sourceTree = "<group>"; };
 		C8DEFAAB1E7050BB00BEE49D /* ProgrammaticUITableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgrammaticUITableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DEFAAE1E7050BB00BEE49D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8DEFAB01E7050BB00BEE49D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +42,8 @@
 		C8DEFAA21E7050BB00BEE49D = {
 			isa = PBXGroup;
 			children = (
+				C8DA75B2265D400F0022B87F /* demo.png */,
+				C8DA75B0265D3E280022B87F /* README.md */,
 				C8DEFAAD1E7050BB00BEE49D /* ProgrammaticUITableView */,
 				C8DEFAAC1E7050BB00BEE49D /* Products */,
 			);
@@ -106,6 +112,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -125,7 +132,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8DEFAB91E7050BB00BEE49D /* LaunchScreen.storyboard in Resources */,
+				C8DA75B3265D400F0022B87F /* demo.png in Resources */,
 				C8DEFAB61E7050BB00BEE49D /* Assets.xcassets in Resources */,
+				C8DA75B1265D3E290022B87F /* README.md in Resources */,
 				C8DEFAB41E7050BB00BEE49D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +277,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mattandrzejczuk.ProgrammaticUITableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -281,7 +290,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mattandrzejczuk.ProgrammaticUITableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -304,6 +313,7 @@
 				C8DEFABF1E7050BB00BEE49D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

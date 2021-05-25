@@ -16,6 +16,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = .systemBlue
+        self.initializeTableView()
     }
     
     override func didReceiveMemoryWarning() {
@@ -25,7 +27,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     func initializeTableView() {
-        let rect = CGRect(x: 100, y: 100, width: 300, height: 400)
+        let rect = CGRect(x: 8, y: 60, width: 300, height: 400)
         self.tableViewMain = UITableView(frame: rect)
         self.tableViewMain.register(UITableViewCell.self, forCellReuseIdentifier: "cellThing");
         self.tableViewMain.delegate = self
@@ -34,7 +36,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableViewMain.reloadData()
     }
     
-    // UITableView Delegate & DataSource Methods:
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell : UITableViewCell = self.tableViewMain.dequeueReusableCell(withIdentifier: "cellThing") as! UITableViewCell
         cell.textLabel!.text = tvitems[indexPath.row];
