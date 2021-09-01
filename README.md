@@ -1,7 +1,7 @@
 # UITableView Tutorial For Swift 5
 ### How to create a UITableView in Swift 5 using the minimum amount of Swift 5 code in a readable fashion. This repo was created for the intent of understanding all requirements for a single UITableView which lives in a ViewController.
 
-![alt text](https://raw.githubusercontent.com/MattAndrzejczuk/How-To-Create-A-UITableView-Programmatically-/master/demo.png)
+![alt text](https://raw.githubusercontent.com/MattA9K/How-To-Create-A-UITableView-Programmatically-/master/demo.png)
 
 Create a UITableView programatically in Swift.
 
